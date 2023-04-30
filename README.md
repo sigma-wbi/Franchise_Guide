@@ -13,13 +13,6 @@
 * 사용자가 알아보기 쉽도록 데이터셋을 사용하여 대시보드를 제작하였습니다.
 * 대시보드와 예상 수익을 함께 확인할 수 있는 웹 사이트를 Flask를 사용하여 제작하였습니다. 
 
-## About Data Crawling
-* Crawling site : http://www.changupmedia.com/cumedia/index.asp
-* Data Cleaning : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/DataCleaning.ipynb
-* Data Analysis : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/analysis.ipynb
-* Final Data : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/datafinal.csv
-* Linear Regression Data : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/modelData.csv
-
 ## 📚Stack
 ![badge](https://img.shields.io/badge/Selenium-21B352?style=flat-square&logo=selenium&logoColor=white)
 ![badge](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
@@ -27,20 +20,27 @@
 ![badge](https://img.shields.io/badge/scikit-learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![badge](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 
+## About Data Crawling
+* Crawling site : http://www.changupmedia.com/cumedia/index.asp
+* Data Cleaning : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/DataCleaning.ipynb
+* Data Analysis : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/analysis.ipynb
+* Final Data : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/datafinal.csv
+* Linear Regression Data : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/modelData.csv
+
 ## 프로젝트 과정
-https://github.com/sigma-wbi/Game_Analysis_Project/blob/main/Game_Analysis_Project.ipynb
 
 1. 데이터 크롤링 & 정제
     - 데이터를 얻을 사이트(http://www.changupmedia.com/cumedia/index.asp)에서 Selenium을 사용하여 데이터 크롤링
-    - 중복값과 결측값 처리 : 중복값 삭제, 결측값은 삭제할 것인지 평균값등으로 매꿔서 사용할 것인지 선택 
-    - 수학적 연산이 필요한 컬럼의 타입을 float로 변경
-    - 12, 2012 등 같은 년도를 의미하는 값들을 통일
-    - 분석에 필요하다고 생각되는 '전체 판매량' 컬럼을 계산하여 생성
+    - 크롤링한 데이터를 대시보드와 선형 회귀 모델에 사용할수 있도록 정제 -> modelData.csv, datafinal.csv
+<img width="80%" src="images\1.jpg"/>
 
-2. 데이터 시각화&분석 : 게임 판매량 데이터셋을 보고 '다음 분기에 어떤 게임을 설계해야 하는가'에 대해 3가지 관점을 통해 시각화&분석
-    - 지역에 따라 선호하는 게임 장르가 다른가
-    - 연도별 게임의 트렌드가 있는가
-    - 출고량이 높은 게임은 어떤 특징이 있는가
+2. 데이터 시각화 & 머신러닝 예측
+    - 정제한 데이터를 분석 & 시각화
+    - 선형 회귀 모델을 사용한 예상 수익 예측
+<img width="80%" src="images\2.jpg"/>
+
+3. 웹페이지 제작 & 대시보드/머신러닝 모델 연동
+    
 
 ## 분석 결론
 * 일본지역 게임 설계 전략과 그 외 지역(NA,EU,Other) 설계 전략을 따로 둔다.
@@ -63,4 +63,4 @@ https://github.com/sigma-wbi/Game_Analysis_Project/blob/main/Game_Analysis_Proje
 
 
 ## Report
-https://github.com/sigma-wbi/ETL_pipeline/tree/main/report
+https://github.com/sigma-wbi/Franchise_Guide/blob/main/report/Franchise_Guide_report.pdf
