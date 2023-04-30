@@ -47,4 +47,5 @@
 
 
 ## Report
-https://github.com/sigma-wbi/Franchise_Guide/blob/main/report/Franchise_Guide_report.pdf
+* 프로젝트 보고서 : https://github.com/sigma-wbi/Franchise_Guide/blob/main/report/Franchise_Guide_report.pdf
+* 시연영상 : https://github.com/sigma-wbi/Franchise_Guide/blob/main/report/Franchise_Guide.mp4
