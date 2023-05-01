@@ -20,7 +20,7 @@
 ![badge](https://img.shields.io/badge/scikit-learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![badge](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
 
-## About Data Crawling
+## About Data 
 * Crawling site : http://www.changupmedia.com/cumedia/index.asp
 * Data Cleaning : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/DataCleaning.ipynb
 * Data Analysis : https://github.com/sigma-wbi/Franchise_Guide/blob/main/flask_app/analysis.ipynb
